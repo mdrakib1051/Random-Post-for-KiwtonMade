@@ -3,64 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>KiwtonMade | Next-Gen Engine</title>
+    <title>KiwtonMade | Premium Engine</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&family=Hind+Siliguri:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;800&amp;family=Hind+Siliguri:wght@400;700&amp;display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="app-container">
         <aside class="sidebar">
             <div class="logo">Kiwton<span>Made</span></div>
-            <p class="tagline">Premium Content Engine v4.0</p>
-            
             <div class="input-form">
-                <div class="field">
-                    <label>Badge Title</label>
-                    <input type="text" id="t" placeholder="e.g. New Arrival">
-                </div>
-                <div class="field">
-                    <label>Price (৳)</label>
-                    <input type="text" id="p" placeholder="3500">
-                </div>
-                <div class="field full">
-                    <label>Image URLs (Comma separated for multiple)</label>
-                    <textarea id="i" placeholder="link1, link2, link3..."></textarea>
-                </div>
-                <div class="field full">
-                    <label>Short Description</label>
-                    <textarea id="d" placeholder="পণ্যটি সম্পর্কে বিস্তারিত লিখুন..."></textarea>
-                </div>
-                <div class="field">
-                    <label>Key Features (Comma)</label>
-                    <textarea id="f" placeholder="Feature 1, Feature 2..."></textarea>
-                </div>
-                <div class="field">
-                    <label>Technical Specs (Key:Value)</label>
-                    <textarea id="s" placeholder="Material:Metal, Color:Black..."></textarea>
-                </div>
-                <div class="field">
-                    <label>Perfect For</label>
-                    <input type="text" id="pf" placeholder="e.g. Students">
-                </div>
-                <div class="field">
-                    <label>Warranty</label>
-                    <input type="text" id="w" placeholder="e.g. 1 Year">
-                </div>
+                <div class="field"><label>Badge Title</label><input type="text" id="t" placeholder="New Arrival"></div>
+                <div class="field"><label>Price (৳)</label><input type="text" id="p" placeholder="3000"></div>
+                <div class="field full"><label>Image URLs (Comma for Multiple)</label><textarea id="i" placeholder="url1, url2..."></textarea></div>
+                <div class="field full"><label>Description</label><textarea id="d" placeholder="পণ্য সম্পর্কে লিখুন..."></textarea></div>
+                <div class="field"><label>Features (Comma)</label><textarea id="f" placeholder="Feature 1, Feature 2"></textarea></div>
+                <div class="field"><label>Specs (Key:Value)</label><textarea id="s" placeholder="Color:Black, Material:Metal"></textarea></div>
+                <div class="field"><label>Perfect For</label><input type="text" id="pf" placeholder="Students"></div>
+                <div class="field"><label>Warranty</label><input type="text" id="w" placeholder="1 Year"></div>
             </div>
-
-            <button onclick="make()" class="gen-btn">GENERATE POST CODE</button>
+            <button onclick="make()" class="gen-btn">GENERATE PREMIUM CODE</button>
         </aside>
-
         <main class="main-content">
-            <div class="output-wrapper">
-                <div class="out-nav">
-                    <h3>Blogger HTML Output</h3>
-                    <button onclick="copyCode()" id="copyBtn">Copy Code</button>
-                </div>
-                <div class="code-area">
-                    <textarea id="res" readonly placeholder="এখানে কোড জেনারেট হবে..."></textarea>
-                </div>
-            </div>
+            <div class="out-nav"><h3>Blogger Output</h3><button onclick="copyCode()" id="copyBtn">Copy Code</button></div>
+            <div class="code-area"><textarea id="res" readonly></textarea></div>
         </main>
     </div>
     <script src="script.js"></script>
