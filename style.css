@@ -1,0 +1,19 @@
+:root { --primary: #00ffa3; --bg: #05070a; --card: #11141b; --text: #e2e8f0; }
+body { background: var(--bg); color: var(--text); font-family: 'Plus Jakarta Sans', sans-serif; margin: 0; padding: 20px; }
+.container { max-width: 800px; margin: auto; background: var(--card); padding: 40px; border-radius: 24px; border: 1px solid #1e293b; box-shadow: 0 20px 50px rgba(0,0,0,0.5); }
+header { text-align: center; margin-bottom: 30px; }
+header h1 { font-size: 32px; margin: 0; font-weight: 800; }
+header h1 span { color: var(--primary); }
+header p { color: #94a3b8; font-size: 14px; }
+.input-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+.full { grid-column: span 2; }
+label { display: block; font-size: 12px; color: var(--primary); font-weight: 800; margin-bottom: 5px; text-transform: uppercase; }
+input, textarea { width: 100%; padding: 12px; background: #0a0f1a; border: 1px solid #1e293b; color: #fff; border-radius: 12px; box-sizing: border-box; font-family: inherit; transition: 0.3s; }
+input:focus, textarea:focus { border-color: var(--primary); outline: none; box-shadow: 0 0 10px rgba(0,255,163,0.1); }
+textarea { height: 80px; resize: none; }
+.gen-btn { width: 100%; padding: 16px; background: var(--primary); color: #000; border: none; border-radius: 14px; font-weight: 800; cursor: pointer; margin-top: 20px; font-size: 16px; transition: 0.3s; }
+.gen-btn:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0,255,163,0.2); }
+.output-box { margin-top: 30px; background: #000; border-radius: 15px; border: 1px solid #1e293b; padding: 15px; }
+.out-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; font-size: 13px; color: var(--primary); font-weight: 800; }
+#res { height: 150px; background: transparent; border: none; color: #00ffa3; font-family: monospace; font-size: 11px; padding: 0; }
+#copyBtn { background: #fff; border: none; padding: 5px 12px; border-radius: 6px; cursor: pointer; font-weight: 800; }
